@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-i^tx6!(0%@dgmvbh)%%wy=)rop007buel#lqbwa37!#-))qxx7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://qr-code-generator-2b65.onrender.com']
 
 
 # Application definition
@@ -127,3 +127,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
