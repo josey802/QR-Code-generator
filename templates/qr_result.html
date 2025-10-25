@@ -1,0 +1,21 @@
+{% extends '_base.html' %} {% block content %}
+<div class="container mt-5 align-items-center text-center">
+  <h2>{{ bus_name }}</h2>
+  <img src="{{ qr_url }}" alt="QR Code" style="border: 1px solid #000000" />
+  <div>
+    <a
+      href="{{ qr_url }}"
+      download="{{ file_name }}"
+      class="btn btn-primary mt-3"
+      >Download QR Code</a
+    >
+    <br />
+    <a
+      href="{% url 'generate_qrcode' %}"
+      class="btn btn-outline-secondary mt-3"
+    >
+      ← Back to Home
+    </a>
+  </div>
+</div>
+{% endblock content %}
